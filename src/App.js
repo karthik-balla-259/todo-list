@@ -56,11 +56,7 @@ function App() {
         {todoList.map((task) => {
           return (
             <Task 
-              taskName={task.taskName} 
-              id={task.id} 
-              checked={task.checked}
-              onStatusChange={onStatusChange}
-              deleteTask={deleteTask} 
+              taskName={task.taskName} id={task.id} checked={task.checked} onStatusChange={onStatusChange} deleteTask={deleteTask} 
             />
           );
         })}
